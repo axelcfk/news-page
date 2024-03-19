@@ -1,0 +1,200 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Sixtyfour&display=swap');  */
+
+/* @font-face {
+  font-family: "Oswald";
+  src: url("/fonts/oswald.woff2") format("woff2"),
+    url("/fonts/oswald.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  
+} */
+
+body {
+  transition: background-color 3.5s ease, color 1.5s ease; /* Lägg till övergångseffekter för bakgrundsfärg och textfärg */
+}
+
+/* .font-oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.oswald-regular {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.custom-thin-border-right {
+  border-width: 1px;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: rgb(209 213 219);
+}
+
+.custom-thin-border-bottom {
+  border-width: 0px;
+  border-bottom: 1px;
+  border-top: 0px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: rgb(209 213 219);
+}
+
+:root {
+  min-width: 459px; /* check _app.js for light/dark-mode colors on the root-element */
+  /* font-family: Helvetica, Arial, sans-serif;  */
+  /*  font-family: system-ui;   */
+  font-family: "Inter", sans-serif;
+  transition: background-color 1.5s ease, color 1.5s ease; /* Lägg till övergångseffekter för bakgrundsfärg och textfärg */
+  }
+  
+
+body {
+  font-size: 12px; /* 16px at min-width 768px */
+  padding: 0;
+}
+
+/* h1 {
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+} */
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* 
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  //font-weight: 400;
+  font-style: normal;
+}
+*/
+
+.topButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 140px;
+  right: 100px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: background-color 0.3s ease;
+}
+
+.topButton:hover {
+  background-color: #5386bd;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.bookmark-btn {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bookmark-btn:hover {
+  background-color: #3d89db;
+}
+
+.bookmark-btn {
+  background-color: rgb(77, 77, 77);
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  margin: 8px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-size: 12px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.bookmark-btn:hover {
+  background-color: #3d89db;
+}
+
+.article-list {
+  list-style: none;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.material-symbols-outlined {
+  font-size: 20px;
+}
+
+.bookmark-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg:hover {
+  cursor: pointer;
+  transform: scale(1.2); /* Öka storleken med 20% när man hovrar */
+  transition: transform 0.2s ease-out; /* Gör övergången smidig */
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.article-titles {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0;
+  }
+}
