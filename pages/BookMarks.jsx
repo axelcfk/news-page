@@ -96,14 +96,14 @@ export default function BookMarks({
   }
 
   return (
-    <div className="px-20">
+    <div className="px-20 ">
       {/*  <div className={`${inter.className}`}> */}
       {/* <p>Saved articles:</p>
       {state.bookmarks.map((bookmark) => (
         <span key={bookmark.id}> {bookmark.id}</span>
       ))} */}
       <div className="flex justify-center">
-        <h1>Saved Articles</h1>
+        <h1 className="mb-20 text-6xl pt-20">Saved Articles</h1>
       </div>
       <button
         className="py-2 px-4 rounded-lg border-none bg-[#1A1C21] text-white font-bold dark:bg-white dark:text-[#1A1C21] hover:cursor-pointer"

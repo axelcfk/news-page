@@ -12,9 +12,9 @@ export default function Navbar() {
         <div
           className="flex justify-items-center content-center"
         >
-          <div className="flex gap-4 items-center">
+          {/* <div className="flex gap-4 items-center">
                 <span class="material-symbols-outlined">menu</span>
-          </div>
+          </div> */}
           <div className="hidden md:flex gap-3 items-center">
             <div className="flex align-middle items-center">
               {/* <div className="flex gap-4 items-center">
@@ -50,14 +50,15 @@ export default function Navbar() {
           </div>
         </div>{" "}
         <div className="mr-6 justify-start">
-          <img
+          <h1 className="font-semibold text-6xl">CHAS NEWS</h1>
+          {/* <img
             className="flex"
             alt="WIRED"
             class="ResponsiveImageContainer-eybHBd fptoWY responsive-image__image"
             src="https://www.wired.com/verso/static/wired/assets/logo-header.svg"
             srcset=""
             sizes="100vw"
-          ></img>
+          ></img> */}
         </div>
         <div className="flex justify-center items-center">
           <div className="mx-2">
