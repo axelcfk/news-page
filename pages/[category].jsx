@@ -70,7 +70,7 @@ export default function CategoryPage({ news }) {
   }
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center px-20">
       <div>
         <h1 className="flex justify-center pb-20 pt-12">
           {console.log("Category:", news.length > 0 ? news[0].category : null)}

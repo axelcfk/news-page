@@ -96,7 +96,7 @@ export default function BookMarks({
   }
 
   return (
-    <div>
+    <div className="px-20">
       {/*  <div className={`${inter.className}`}> */}
       {/* <p>Saved articles:</p>
       {state.bookmarks.map((bookmark) => (

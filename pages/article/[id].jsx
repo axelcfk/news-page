@@ -196,15 +196,15 @@ export default function Article({ article }) {
   //Shantis add/delete knapp
 
   return (
-    <div>
+    <div className="px-20 pt-20 flex flex-col justify-center items-start ">
       {article && (
         <>
-          <h2>{article.title}</h2>
-          <img src={article.image_url} alt={article.title} />
+          <h2 className="text-5xl ">{article.title}</h2>
+          <img className="w-1/2 mb-10" src={article.image_url} alt={article.title} />
           <div className="btn-container">
             <div className="bookmark-btn-wrapper">
               <button
-                className="bookmark-btn"
+                className="bookmark-btn mb-10"
                 onClick={() => toggleBookmark(article)}
               >
                 <span className="material-symbols-outlined">
@@ -215,10 +215,10 @@ export default function Article({ article }) {
             </div>
           </div>
           {bookmarkAricleID === article.article_id && (
-            <span className="fade-out-text">{bookmarkText}</span>
+            <span className="fade-out-text">{bookmarkText} {""} Lorem20</span>
           )}
-          <p>{article.description}</p>
-          <h3>{article.content}</h3>
+          <p className="w-1/2 text-lg">{article.description} {""} Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas itaque minima sit officiis nihil quasi quam tempore eligendi ratione...</p>
+          <h3 className="text-4xl mb-20">{article.content}</h3>
         </>
       )}
     </div>
